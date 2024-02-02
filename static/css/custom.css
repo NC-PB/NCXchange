@@ -1,0 +1,8 @@
+tbody > tr:nth-child(even) > td {
+    background-color:inherit;
+}
+
+
+#myTable .column1 {
+    width: 30%;
+}

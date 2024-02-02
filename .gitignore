@@ -1,0 +1,21 @@
+# .gitignore
+
+# Ignore Hugo's generated files
+/public/
+/resources/_gen/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore files related to your IDE or text editor
+.idea/
+*.sublime-project
+*.sublime-workspace
+.vscode/
+
+# Ignore Node.js dependencies if you're using them
+node_modules/
+
+# Ignore Python virtual environment if you're using one
+venv/

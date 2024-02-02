@@ -1,0 +1,43 @@
+baseURL = 'https://ncx.cnc-master.xyz/'
+languageCode = 'de'
+defaultContentLanguage = "de"
+title = 'NCXchange'
+
+[languages]
+[languages.de]
+title = "NCXchange"
+weight = 1
+languageName = "Deutsch"
+
+[languages.en]
+title = "NCXchange"
+weight = 2
+languageName = "English"
+
+
+
+[params]
+showVisitedLinks = false
+disableLandingPageButton = true
+collapsibleMenu = true
+alwaysopen = false
+disableRootBreadcrumb = true
+custom_css = ["css/custom.css"]
+disableInlineCopyToClipBoard = true
+
+themeVariant = [
+    { identifier = "zen-dark",       name = "Dark"},
+	{ identifier = "zen-light",       name = "Light"},
+]
+
+
+[module]
+    [[module.imports]]
+        path = "github.com/McShelby/hugo-theme-relearn"
+        disable = false
+
+[outputs]
+home = [ "HTML", "RSS", "SEARCH"]
+
+[markup.goldmark.renderer]
+unsafe= true
