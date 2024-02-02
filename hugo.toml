@@ -24,6 +24,7 @@ alwaysopen = false
 disableRootBreadcrumb = true
 custom_css = ["css/custom.css"]
 disableInlineCopyToClipBoard = true
+editURL = "https://github.com/NC-PB/NCXchange-web/tree/main/content/${FilePath}"
 
 themeVariant = [
     { identifier = "zen-dark",       name = "Dark"},
@@ -41,3 +42,9 @@ home = [ "HTML", "RSS", "SEARCH"]
 
 [markup.goldmark.renderer]
 unsafe= true
+
+[[menu.shortcuts]]
+name = "<i class='fab fa-fw fa-github'></i> GitHub repo"
+identifier = "ds"
+url = "https://github.com/NC-PB/NCXchange-web"
+weight = 10
