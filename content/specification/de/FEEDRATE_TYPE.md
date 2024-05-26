@@ -1,0 +1,25 @@
+
+### Vorschubart
+
+<table id="myTable">
+    <tbody>
+    <tr>
+        <td class="column1">Schlüsselwort</td>
+        <td>FEEDRATE_TYPE</td>
+    </tr>
+    <tr>
+        <td rowspan="3">Wert</td>
+         <td>MIN</td>
+    </tr>
+    <tr>
+        <td>RPM</td>
+    </tr>
+        <tr>
+        <td>FZ</td>
+    </tr>
+    <tr>
+        <td>Beispiel</td>
+        <td>FEEDRATE_TYPE=MIN</td>
+    </tr>
+    </tbody>
+</table>

@@ -1,0 +1,38 @@
+
+### Bearbeitungszyklen
+
+<table id="myTable">
+    <tbody>
+    <tr>
+        <td class="column1">Schlüsselwort</td>
+        <td colspan="2">CYCLE</td>
+    </tr>
+    <tr>
+        <td rowspan="6">Werte</td>
+        <td>Bohren</td>
+        <td>DRILL</td>
+    </tr>
+    <tr>
+        <td>Bohren mir Verweilzeit</td>
+        <td>DRILL,DELAY</td>
+    </tr>
+    <tr>
+        <td>Tieflochbohren</td>
+        <td>DRILL,DEEP_HOLE</td>
+    </tr>
+    <tr>
+        <td>Gewindeschneiden</td>
+        <td>TAP</td>
+    </tr>
+    <tr>
+        <td>Reiben</td>
+        <td>REAM</td>
+    </tr>
+    <tr>
+        <td>Stopp</td>
+        <td>STOP</td>
+    </tr>
+        <td class="column1">Beispiel</td>
+        <td colspan="2">CYCLE=DRILL,DEEP_HOLE</td>
+    </tbody>
+</table>

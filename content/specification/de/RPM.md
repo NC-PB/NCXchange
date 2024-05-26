@@ -1,0 +1,15 @@
+
+### Drehzahl
+
+<table id="myTable">
+    <tbody>
+    <tr>
+        <td class="column1">Schlüsselwort</td>
+        <td>RPM</td>
+    </tr>
+  <tr>
+    <td>Beispiel</td>
+    <td>RPM=1200</td>
+  </tr>
+    </tbody>
+</table>

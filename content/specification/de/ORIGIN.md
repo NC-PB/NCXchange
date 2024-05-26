@@ -1,0 +1,18 @@
+### Nullpunkt
+
+<table id="myTable">
+    <tbody>
+    <tr>
+        <td class="column1">Schlüsselwort</td>
+        <td>ORIGIN</td>
+    </tr>
+    <tr>
+        <td>Wert</td>
+        <td>Nullpunknummer</td>
+    </tr>
+    <tr>
+        <td>Beispiel</td>
+        <td>ORIGIN=1</td>
+    </tr>
+    </tbody>
+</table>

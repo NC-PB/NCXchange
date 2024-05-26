@@ -3,6 +3,8 @@ title = "Spezifikation"
 weight = 2
 +++
 
+
+
 ### Programm
 
 <table id="myTable">
@@ -50,6 +52,25 @@ weight = 2
 </tbody>
 </table>
 
+
+
+
+### Kommentar
+
+<table id="myTable">
+    <tbody>
+        <tr>
+            <td class="column1">Schlüsselwort</td>
+            <td>COMM</td>
+        </tr>
+        <tr>
+            <td>Beispiel</td>
+            <td>COMM=PLANFRAESEN</td>
+        </tr>
+    </tbody>
+</table>
+
+-------
 
 ### Interpolation
 
@@ -131,7 +152,7 @@ weight = 2
   </tr>
 <tr>
     <td>Beispiel</td>
-    <td>GOTO:X=-22-543</td>
+    <td>GOTO:X=-22.543</td>
   </tr>
 </tbody>
 </table>
@@ -210,240 +231,35 @@ weight = 2
     </tbody>
 </table>
 
+## Werkzeuge
 
- ### Werkzeugaufruf
-
-<table id="myTable">
-    <tbody>
-    <tr>
-        <td class="column1">Schlüsselwort</td>
-        <td>TOOL_CALL</td>
-    </tr>
-    <tr>
-        <td>Parameter</td>
-        <td>Werkzeugnummer</td>
-    </tr>
-    <tr>
-        <td>Beispiel</td>
-        <td>TOOL_CALL=12</td>
-    </tr>
-    </tbody>
-</table>
+{{% include file="specification/de/TOOL_CALL.md" %}}
+{{% include file="specification/de/TOOL_SELECT.md" %}}
 
 
-### Drehzahl
+## Maschinenfunktionen
 
-<table id="myTable">
-    <tbody>
-    <tr>
-        <td class="column1">Schlüsselwort</td>
-        <td>RPM</td>
-    </tr>
-  <tr>
-    <td>Beispiel</td>
-    <td>RPM=1200</td>
-  </tr>
-    </tbody>
-</table>
+{{% include file="specification/de/MACHINE_FUNCTION.md" %}}
+ 
 
 
-### Maschinenbefehle
+{{% include file="specification/de/CYCLE.md" %}}
 
-<table id="myTable">
-    <tbody>
-    <tr>
-        <td class="column1">Schlüsselwort</td>
-        <td>FUNCTION_MACHINE</td>
-    </tr>
-    <tr>
-        <td>Wert</td>
-        <td>M-Code Nummer</td>
-    </tr>
-    <tr>
-        <td>Beispiel</td>
-        <td>FUNCTION_MACHINE=56</td>
-    </tr>
-    </tbody>
-</table>
+-----
+## Bezugspunkt
 
+{{% include file="specification/de/ORIGIN.md" %}}
 
+{{% include file="specification/de/MATRIX.md" %}}
 
-### Kommentar
+--------
 
-<table id="myTable">
-    <tbody>
-        <tr>
-            <td class="column1">Schlüsselwort</td>
-            <td>COMM</td>
-        </tr>
-        <tr>
-            <td>Beispiel</td>
-            <td>COMM=PLANFRAESEN</td>
-        </tr>
-    </tbody>
-</table>
+{{% include file="specification/de/FEEDRATE.md" %}}
 
+{{% include file="specification/de/FEEDRATE_TYPE.md" %}}
 
-### Bearbeitungszyklen
+----------
 
-<table id="myTable">
-    <tbody>
-    <tr>
-        <td class="column1">Schlüsselwort</td>
-        <td colspan="2">CYCLE</td>
-    </tr>
-    <tr>
-        <td rowspan="6">Werte</td>
-        <td>Bohren</td>
-        <td>DRILL</td>
-    </tr>
-    <tr>
-        <td>Bohren mir Verweilzeit</td>
-        <td>DRILL,DELAY</td>
-    </tr>
-    <tr>
-        <td>Tieflochbohren</td>
-        <td>DRILL,DEEP_HOLE</td>
-    </tr>
-    <tr>
-        <td>Gewindeschneiden</td>
-        <td>TAP</td>
-    </tr>
-    <tr>
-        <td>Reiben</td>
-        <td>REAM</td>
-    </tr>
-    <tr>
-        <td>Stopp</td>
-        <td>STOP</td>
-    </tr>
-        <td class="column1">Beispiel</td>
-        <td colspan="2">CYCLE=DRILL,DEEP_HOLE</td>
-    </tbody>
-</table>
+{{% include file="specification/de/SPINDLE.md" %}}
 
-
-### Nullpunkt
-
-<table id="myTable">
-    <tbody>
-    <tr>
-        <td class="column1">Schlüsselwort</td>
-        <td>ORIGIN</td>
-    </tr>
-    <tr>
-        <td>Wert</td>
-        <td>Nullpunknummer</td>
-    </tr>
-    <tr>
-        <td>Beispiel</td>
-        <td>ORIGIN=1</td>
-    </tr>
-    </tbody>
-</table>
-
-
-### Vorschub
-
-<table id="myTable">
-    <tbody>
-    <tr>
-        <td class="column1">Schlüsselwort</td>
-        <td>FEEDRATE</td>
-    </tr>
-    <tr>
-        <td>Wert</td>
-        <td>Vorschubwert</td>
-    </tr>
-    <tr>
-        <td>Beispiel</td>
-        <td>FEEDRATE=200</td>
-    </tr>
-    </tbody>
-</table>
-
-### Vorschubart
-
-<table id="myTable">
-    <tbody>
-    <tr>
-        <td class="column1">Schlüsselwort</td>
-        <td>FEEDRATE_TYPE</td>
-    </tr>
-    <tr>
-        <td rowspan="3">Wert</td>
-         <td>MIN</td>
-    </tr>
-    <tr>
-        <td>RPM</td>
-    </tr>
-        <tr>
-        <td>FZ</td>
-    </tr>
-    <tr>
-        <td>Beispiel</td>
-        <td>FEEDRATE_TYPE=MIN</td>
-    </tr>
-    </tbody>
-</table>
-
- ### Nullpunktverschiebung
-
-
-<table id="myTable">
-    <tbody>
-    <tr>
-        <td class="column1">Schlüsselwort</td>
-        <td colspan="2">MATRIX</td>
-    </tr>
-    <tr>
-        <td rowspan="3">Adresse</td>
-        <td>Verschiebung in X</td>
-        <td>SHIFT_X</td>
-    </tr>
-    <tr>
-        <td>Verschiebung in Y</td>
-        <td>SHIFT_Y</td>
-    </tr>
-    <tr>
-        <td>Verschiebung in Z</td>
-        <td>SHIFT_Z</td>
-    </tr>
-    <tr>
-        <td class="column1">Beispiel</td>
-        <td colspan="2">MATRIX:SHIFT_X=33.5</td>
-    </tbody>
-</table>
-
-
-### Spindel
-
-<table id="myTable">
-    <tbody>
-    <tr>
-        <td class="column1">Schlüsselwort</td>
-        <td colspan="2">SPINDLE</td>
-    </tr>
-    <tr>
-        <td rowspan="3">Werte</td>
-        <td>Ein Rechtslauf</td>
-        <td>CW</td>
-    </tr>
-    <tr>
-        <td>Ein Linkslauf</td>
-        <td>CCW</td>
-    </tr>
-    <tr>
-        <td>Aus</td>
-        <td>OFF</td>
-    </tr>
-        <tr>
-        <td>Adresse</td>
-        <td colspan="2">Spindelnummer</td>
-    </tr> 
-    <tr>
-        <td>Beispiel</td>
-        <td colspan="2">SPINDLE:1=CCW</td>
-    </tr>
-    </tbody>
-</table>
+{{% include file="specification/de/RPM.md" %}}
