@@ -74,192 +74,66 @@ weight = 2
 
 ### Interpolation
 
-<table id="myTable">
-<tbody>
-  <tr>
-    <td class="column1">Schlüsselwort</td>
-    <td><b>INTERPO</B></td>
-  </tr>
-  <tr>
-    <td rowspan="6">Werte</td>
-    <td>RAPID</td>
-  </tr>
-  <tr>
-    <td>WORK</td>
-  </tr>
-
-  <tr>
-    <td>ARC,CW</td>
-  </tr>
-
-  <tr>
-    <td>ARC,CCW</td>
-  </tr>
-
-  <tr>
-    <td>ARC,CW,CENTER</td>
-  </tr>
-
-  <tr>
-    <td>ARC,CCW,CENTER</td>
-  </tr>
-
-  <tr>
-    <td>Beispiel</td>
-    <td>INTERPO=ARC,CCW</td>
-  </tr>
-</tbody>
-</table>
+{{< include-html "content/specification/de/INTERPO.html" >}}
 
 ### Kreismittelpunkt
+{{< include-html "content/specification/de/CENTER.html" >}}
 
-<table id="myTable">
-<tbody>
-  <tr>
-    <td class="column1">Schlüsselwort</td>
-    <td>CENTER</td>
-  </tr>
-  <tr>
-    <td>Adresse</td>
-    <td>Achse</td>
-  </tr>
-  <tr>
-    <td>Wert</td>
-    <td>Position</td>
-  </tr>
-    <tr>
-    <td>Beispiel</td>
-    <td>CENTER:X=20</td>
-  </tr>
-</tbody>
-</table>
 
 ### Bewegung
+{{< include-html "content/specification/de/GOTO.html" >}}
 
-<table id="myTable">
-<tbody>
-  <tr>
-    <td class="column1">Schlüsselwort</td>
-    <td>GOTO</td>
-</tr>
-<tr>
-    <td>Adresse</td>
-    <td>Achse</td>
-  </tr>
-  <tr>
-    <td>Wert</td>
-    <td>Position</td>
-  </tr>
-<tr>
-    <td>Beispiel</td>
-    <td>GOTO:X=-22.543</td>
-  </tr>
-</tbody>
-</table>
 
 ### Arbeitsebene
-
-<table id="myTable">
-    <tbody>
-    <tr>
-        <td class="column1">Schlüsselwort</td>
-        <td>WORKPLANE</td>
-    </tr>
-      <tr>
-        <td rowspan="3">Werte</td>
-        <td>XY+Z</td>
-    </tr>
-  <tr>
-        <td>XZ+Y</td>
-    </tr>
-  <tr>
-        <td>YZ+X</td>
-    </tr>
-    </tbody>
-</table>
-
+{{< include-html "content/specification/de/WORKPLANE.html" >}}
 
 ### Radiuskompensation
-
-<table id="myTable">
-    <tbody>
-    <tr>
-        <td class="column1">Schlüsselwort</td>
-        <td>COMPENSATION</td>
-    </tr>
-    <tr>
-        <td rowspan="3">Werte</td>
-        <td>LEFT</td>
-    </tr>
-    <tr>
-        <td>RIGHT</td>
-    </tr>
-    <tr>
-        <td>OFF</td>
-    </tr>
-  <tr>
-    <td>Beispiel</td>
-    <td>COMPENSATOIN=OFF</td>
-  </tr>
-    </tbody>
-</table>
-
+{{< include-html "content/specification/de/COMPENSATION.html" >}}
 
 ### Offset
+{{< include-html "content/specification/de/OFFSET.html" >}}
 
-<table id="myTable">
-    <tbody>
-    <tr>
-        <td class="column1">Schlüsselwort</td>
-        <td>OFFSET</td>
-    </tr>
-  <tr>
-    <td>Wert</td>
-    <td>Offsetnummer</td>
-  </tr>
-    <tr>
-        <td rowspan="2">Adresse</td>
-        <td>LEN</td>
-    </tr>
-     <tr>
-        <td>DIAM</td>
-    </tr>
-    <tr>
-        <td>Beispiel</td>
-        <td>OFFSET:LEN=10</td>
-    </tr>
-    </tbody>
-</table>
+---
 
 ## Werkzeuge
+ ### Werkzeugaufruf
+{{< include-html "content/specification/de/TOOL_CALL.html" >}}
 
-{{% include file="specification/de/TOOL_CALL.md" %}}
-{{% include file="specification/de/TOOL_SELECT.md" %}}
+ ### Werkzeugvorwahl
+{{< include-html "content/specification/de/TOOL_SELECT.html" >}}
 
+---
 
 ## Maschinenfunktionen
+### Maschinenbefehle
 
-{{% include file="specification/de/MACHINE_FUNCTION.md" %}}
+{{< include-html "content/specification/de/MACHINE_FUNCTION.html" >}}
  
 
+### Bearbeitungszyklen
 
-{{% include file="specification/de/CYCLE.md" %}}
+{{< include-html "content/specification/de/CYCLE.html" >}}
 
 -----
 ## Bezugspunkt
 
-{{% include file="specification/de/ORIGIN.md" %}}
+### Nullpunkt
+{{< include-html "content/specification/de/ORIGIN.html" >}}
 
-{{% include file="specification/de/MATRIX.md" %}}
+### Nullpunktverschiebung
+{{< include-html "content/specification/de/MATRIX.html" >}}
 
 --------
+### Vorschub
+{{< include-html "content/specification/de/FEEDRATE.html" >}}
 
-{{% include file="specification/de/FEEDRATE.md" %}}
-
-{{% include file="specification/de/FEEDRATE_TYPE.md" %}}
+### Vorschubart
+{{< include-html "content/specification/de/FEEDRATE_TYPE.html" >}}
 
 ----------
 
-{{% include file="specification/de/SPINDLE.md" %}}
+### Spindel
+{{< include-html "content/specification/de/SPINDLE.html" >}}
 
-{{% include file="specification/de/RPM.md" %}}
+### Drehzahl
+{{< include-html "content/specification/de/RPM.html" >}}
