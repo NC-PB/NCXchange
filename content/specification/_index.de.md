@@ -6,69 +6,12 @@ weight = 2
 
 
 ### Programm
-
-<table id="myTable">
-<tbody>
-  <tr>
-    <td class="column1">Schlüsselwort</td>
-    <td colspan="2">PROGRAM</td>
-  </tr>
-  <tr>
-    <td rowspan="3">Adresse</td>
-    <td colspan="2">NAME</td>
-  </tr>
-  <tr>
-    <td colspan="2">TYPE</td>
-  </tr>
-  <tr>
-    <td colspan="2">COMM</td>
-  </tr>
-  <tr>
-    <td rowspan="4">Werte</td>
-    <td>PROGRAM:NAME</td>
-    <td>String</td>
-  </tr>
-  <tr>
-    <td rowspan="2">PROGRAM:UNIT</td>
-    <td>MM</td>
-  </tr>
-  <tr>
-    <td>INCH</td>
-  </tr>
-  <tr>
-    <td>PROGRAM:COMM</td>
-    <td>String</td>
-  </tr>
-    <tr>
-    <td rowspan="3">Beispiel</td>
-    <td colspan="2">PROGRAM:COMM=Links</td>
-  </tr>
-  <tr>
-    <td colspan="2">PROGRAM:UNIT=MM</td>
-  </tr>
-  <tr>
-    <td colspan="2">PROGRAM:NAME=5544</td>
-  </tr>
-</tbody>
-</table>
-
-
+{{< include-html "content/specification/de/PROGRAM.html" >}}
 
 
 ### Kommentar
 
-<table id="myTable">
-    <tbody>
-        <tr>
-            <td class="column1">Schlüsselwort</td>
-            <td>COMM</td>
-        </tr>
-        <tr>
-            <td>Beispiel</td>
-            <td>COMM=PLANFRAESEN</td>
-        </tr>
-    </tbody>
-</table>
+{{< include-html "content/specification/de/COMMENT.html" >}}
 
 -------
 

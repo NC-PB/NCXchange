@@ -6,3 +6,7 @@ tbody > tr:nth-child(even) > td {
 #myTable .column1 {
     width: 30%;
 }
+
+#myTable .column2 {
+    width: 10%;
+}
